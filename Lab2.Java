@@ -6,22 +6,21 @@ public class Main
 	public static void main(String[] args) {
 	    
 	Scanner n = new Scanner(System.in);    
-	int fact=0, i=0, f=0;
+	int number=0, i=0, f=0;
 	
 	
 	
 	System.out.print("Введите целое неотрицательное число n>15: ");
 	
-	
-	
+
 	for( ; !n.hasNext("quit"); System.out.print("Введите целое неотрицательное число n>15: ")) {
 			if (n.hasNextInt()) {
-			    fact = n.nextInt();
+			    number = n.nextInt();
 			    
-			    if (fact<15 && fact>0)
+			    if (number<15 && number>0)
     				{f=1;
     				i=1;
-    				while (i<fact)
+    				while (i<number)
     				    {f += f*i;
     				     i++;   
     				    }
